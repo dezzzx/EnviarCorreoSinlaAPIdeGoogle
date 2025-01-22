@@ -14,7 +14,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 public class MailSender {
-    private static final String EMAIL = "correo@gmail.com";//Aqui pones el correo
+    private static final String EMAIL = "correo@gmail.com";//Aqui pones el correo de gmail
     private static final String PASSWORD = "contraseña de aplicacion";    // Cambia esto obteniendo la contraseña de aplicacion mediante este (El correo es recomendable que tenga verificacion de dos pasos) Link: https://myaccount.google.com/apppasswords?rapt=AEjHL4OUljFqUrXMsKkNLaFF4R9Gb7yo10nru5LzetNSxGYKEO8GkBSopOaqtN9j8YTrro6PKNT1iAnoC3LpJrs4-5Clz61oNTOGtdzAwMs-USlHXsPZQ30
     public static void enviarCorreo(String destinatario, String asunto, String mensaje) {
         AsyncTask.execute(() -> {
